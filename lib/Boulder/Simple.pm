@@ -2,7 +2,8 @@
 # http://www.timaoutloud.org/
 # This code is released under the Artistic License.
 #
-# Boulder::Simple - a class for simple Boulder IO interaction 
+# Boulder::Simple - a class for simple Boulder IO interaction.
+# DEPRECATED. Use Boulder::Util instead.
 # 
 
 package Boulder::Simple;
@@ -11,7 +12,7 @@ use strict;
 use CGI::Util qw( unescape escape );
 
 use vars qw( $VERSION );
-$VERSION = '0.02';
+$VERSION = '0.021';
 
 sub save {
     my($class,$filehandle,$data) = @_;
@@ -99,7 +100,8 @@ __END__
 
 =head1 NAME
 
-Boulder::Simple - a class for simple Boulder IO interaction
+Boulder::Simple - a class for simple Boulder IO interaction. 
+DEPRECATED. Use Boulder::Util instead.
 
 =head1 SYNOPSIS
  
@@ -132,7 +134,7 @@ Boulder::Simple - a class for simple Boulder IO interaction
 =head1 DESCRIPTION
 
 Boulder::Simple is a simple lightweight class for manipulating
-Boulder IO records.
+Boulder IO records. DEPRECATED. Use Boulder::Util instead.
 
 Boulder IO is the native format output by the CGI package's C<save>
 method. While working on a project I used that method to serialize
@@ -205,8 +207,8 @@ L<http://www.perl.com/language/misc/Artistic.html>.
 
 =head1 AUTHOR & COPYRIGHT
 
-Except where otherwise noted, Boulder::Simple is Copyright 2004,
-Timothy Appnel, cpan@timaoutloud.org. All rights reserved.
+Except where otherwise noted, Boulder::Simple is Copyright 2004-2005,
+Timothy Appnel, tima@cpan.org. All rights reserved.
 
 =cut
 

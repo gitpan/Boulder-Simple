@@ -1,5 +1,5 @@
 Boulder::Simple is a simple lightweight class for manipulating
-Boulder IO records.
+Boulder IO records. DEPRECATED. Use Boulder::Util instead.
 
 INSTALLATION
 
@@ -21,6 +21,6 @@ The software is released under the Artistic License. The terms of
 the Artistic License are described at
 http://www.perl.com/language/misc/Artistic.html.
 
-Except where otherwise noted, Boulder::Simple is Copyright 2004,
-Timothy Appnel, cpan@timaoutloud.org. All rights reserved.
+Except where otherwise noted, Boulder::Simple is Copyright 
+2004-2005, Timothy Appnel, tima@cpan.org. All rights reserved.
 
