@@ -11,7 +11,7 @@ use strict;
 use CGI::Util qw( unescape escape );
 
 use vars qw( $VERSION );
-$VERSION = '0.01';
+$VERSION = '0.02';
 
 sub save {
     my($class,$filehandle,$data) = @_;
@@ -46,6 +46,7 @@ sub load_as_hash {
     my %hash;
     foreach (@lines) {
         my($key,$value)=split /=/, $_, 2;
+        next unless $key;
         $value = unescape($value);
         unless (exists($hash{$key})) {
             $hash{$key} = $value;
